@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Angular Js Ideas</title>
+  </head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<div data-ng-app="myApp" data-ng-controller="myCtrl">
+  <p>Enter Name: <input type="text" data-ng-model="firstName"></p>
+  <p>You entered : {{ firstName }}</p>
+  <h1>Hi <span data-ng-bind="firstName"><span></h1> 
+  </div>
+  <script>
+    var app = angular.module("myApp",[]);
+    app.controller('myCtrl', function($scope){
+      $scope.firstName = "Jed"
+    });
+  </script>
+ </body>
+</html>
